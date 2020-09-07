@@ -11,7 +11,7 @@ The app has 6 sections:
 * Contact: This section allows the users to contact the club members through email and discord.
 * Sign In/Sign Up: As the section implies, it is the sign in/ sign up page.  
 
-# Why should I use this app?
+# Why should you use this app?
 UMassDesign allows club members to:
 * Post their works for the weekly challenges
 * View the works of others for the weekly challenges

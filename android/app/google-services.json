@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "438514675561",
+    "firebase_url": "https://umassdesign-3cc02.firebaseio.com",
+    "project_id": "umassdesign-3cc02",
+    "storage_bucket": "umassdesign-3cc02.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:438514675561:android:3d6e280555ff2a4fdc17f8",
+        "android_client_info": {
+          "package_name": "com.example.UMassDesign"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "438514675561-o84bb0oqoteolvjobv883re59q4ulnof.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC5lQK7L4BRTFrncu8PWgdshxEp-4IGivY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "438514675561-o84bb0oqoteolvjobv883re59q4ulnof.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

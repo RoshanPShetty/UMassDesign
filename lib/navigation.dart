@@ -1,3 +1,4 @@
+import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 import 'home.dart';
 import 'utils/variables.dart';
@@ -10,6 +11,24 @@ class NavigationPage extends StatefulWidget {
 
 class _NavigationPageState extends State<NavigationPage> {
   bool signedIn = false;
+
+  @override
+  void initState() {
+    super.initState();
+    FirebaseAuth.instance.authStateChanges().listen((useraccount) {
+      if(useraccount != null) {
+        setState(() {
+          signedIn = true;
+        });
+      }
+
+      else {
+        setState(() {
+          signedIn = false;
+        });
+      }      
+    });
+  }
 
   @override
   Widget build(BuildContext context) {
@@ -25,6 +44,13 @@ class Login extends StatefulWidget {
 }
 
 class _LoginState extends State<Login> {
+  var emailController = TextEditingController();
+  var passwordController = TextEditingController();
+
+  login() {
+    FirebaseAuth.instance.signInWithEmailAndPassword(email: emailController.text, password: passwordController.text);
+  }
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -60,6 +86,7 @@ class _LoginState extends State<Login> {
               width: MediaQuery.of(context).size.width,
               margin: EdgeInsets.only(left: 20, right: 20),
               child: TextField(
+                controller: emailController,
                 keyboardType: TextInputType.emailAddress,
                 decoration: InputDecoration(
                     filled: true,
@@ -78,6 +105,7 @@ class _LoginState extends State<Login> {
               width: MediaQuery.of(context).size.width,
               margin: EdgeInsets.only(left: 20, right: 20),
               child: TextField(
+                controller: passwordController,
                 obscureText: true,
                 keyboardType: TextInputType.emailAddress,
                 decoration: InputDecoration(
@@ -93,16 +121,19 @@ class _LoginState extends State<Login> {
             SizedBox(
               height: 20,
             ),
-            Container(
-              width: MediaQuery.of(context).size.width / 2,
-              height: 50,
-              decoration: BoxDecoration(
-                  color: Colors.white, borderRadius: BorderRadius.circular(20)),
-              child: Center(
-                  child: Text(
-                "Login",
-                style: robotoStyle(20, Colors.grey[700], FontWeight.w700),
-              )),
+            InkWell(
+              onTap: () => login(),
+                          child: Container(
+                width: MediaQuery.of(context).size.width / 2,
+                height: 50,
+                decoration: BoxDecoration(
+                    color: Colors.white, borderRadius: BorderRadius.circular(20)),
+                child: Center(
+                    child: Text(
+                  "Login",
+                  style: robotoStyle(20, Colors.grey[700], FontWeight.w700),
+                )),
+              ),
             ),
             SizedBox(height: 30,),
             Row(

@@ -1,6 +1,6 @@
 # What is UMassDesign?
 
-UMassDesign is a Flutter application that is built for the UMass Design Club. It was built in order to increase interactivity for the club and giving a platform for everyone to post their work. 
+UMassDesign is a Flutter application that is built for the UMass Design Club. It was built in order to increase interactivity for the club and give a platform for everyone to post their work. 
 
 # What are some of the features?
 The app has 6 sections: 

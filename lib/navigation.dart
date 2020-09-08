@@ -1,6 +1,6 @@
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
-import 'home.dart';
+import 'homepage.dart';
 import 'utils/variables.dart';
 import 'signup.dart';
 
@@ -16,17 +16,15 @@ class _NavigationPageState extends State<NavigationPage> {
   void initState() {
     super.initState();
     FirebaseAuth.instance.authStateChanges().listen((useraccount) {
-      if(useraccount != null) {
+      if (useraccount != null) {
         setState(() {
           signedIn = true;
         });
-      }
-
-      else {
+      } else {
         setState(() {
           signedIn = false;
         });
-      }      
+      }
     });
   }
 
@@ -48,7 +46,8 @@ class _LoginState extends State<Login> {
   var passwordController = TextEditingController();
 
   login() {
-    FirebaseAuth.instance.signInWithEmailAndPassword(email: emailController.text, password: passwordController.text);
+    FirebaseAuth.instance.signInWithEmailAndPassword(
+        email: emailController.text, password: passwordController.text);
   }
 
   @override
@@ -123,11 +122,12 @@ class _LoginState extends State<Login> {
             ),
             InkWell(
               onTap: () => login(),
-                          child: Container(
+              child: Container(
                 width: MediaQuery.of(context).size.width / 2,
                 height: 50,
                 decoration: BoxDecoration(
-                    color: Colors.white, borderRadius: BorderRadius.circular(20)),
+                    color: Colors.white,
+                    borderRadius: BorderRadius.circular(20)),
                 child: Center(
                     child: Text(
                   "Login",
@@ -135,15 +135,26 @@ class _LoginState extends State<Login> {
                 )),
               ),
             ),
-            SizedBox(height: 30,),
+            SizedBox(
+              height: 30,
+            ),
             Row(
               mainAxisAlignment: MainAxisAlignment.center,
               children: <Widget>[
-                Text("Dont' have an account?", style: robotoStyle(20, Colors.white),),
-                SizedBox(width: 10,),
+                Text(
+                  "Dont' have an account?",
+                  style: robotoStyle(20, Colors.white),
+                ),
+                SizedBox(
+                  width: 10,
+                ),
                 InkWell(
-                  onTap: () => Navigator.push(context, MaterialPageRoute(builder: (context) => SignUp())),
-                  child: Text("Register", style: robotoStyle(20, Colors.white, FontWeight.bold),)),
+                    onTap: () => Navigator.push(context,
+                        MaterialPageRoute(builder: (context) => SignUp())),
+                    child: Text(
+                      "Register",
+                      style: robotoStyle(20, Colors.white, FontWeight.bold),
+                    )),
               ],
             ),
           ],

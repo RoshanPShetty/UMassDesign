@@ -32,11 +32,11 @@ class _HomePageState extends State<HomePage> {
             BottomNavigationBarItem(
                 icon: Icon(
                   Icons.home,
-                  size: 25,
+                  size: 32,
                 ),
                 title: Text(
                   'Home',
-                  style: robotoStyle(20),
+                  style: robotoStyle(15),
                 )),
             BottomNavigationBarItem(
                 icon: Icon(
@@ -45,7 +45,7 @@ class _HomePageState extends State<HomePage> {
                 ),
                 title: Text(
                   'Search',
-                  style: robotoStyle(20),
+                  style: robotoStyle(15),
                 )),
             BottomNavigationBarItem(
                 icon: Icon(
@@ -54,7 +54,7 @@ class _HomePageState extends State<HomePage> {
                 ),
                 title: Text(
                   'Challenges',
-                  style: robotoStyle(20),
+                  style: robotoStyle(15),
                 )),
             BottomNavigationBarItem(
                 icon: Icon(
@@ -63,7 +63,7 @@ class _HomePageState extends State<HomePage> {
                 ),
                 title: Text(
                   'Rank',
-                  style: robotoStyle(20),
+                  style: robotoStyle(15),
                 )),
             BottomNavigationBarItem(
                 icon: Icon(
@@ -72,7 +72,7 @@ class _HomePageState extends State<HomePage> {
                 ),
                 title: Text(
                   'Profile',
-                  style: robotoStyle(20),
+                  style: robotoStyle(15),
                 )),
           ]),
     );

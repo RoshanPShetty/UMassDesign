@@ -4,12 +4,19 @@ UMassDesign is a Flutter application that is built for the UMass Design Club. It
 
 # What are some of the features?
 The app has 6 sections: 
+* Home: The general page where all the posts will be there.
+
+<img src = "/images/Samples/HomePage.jpeg">
+
 * Profile: This section allows the users to see what they have posted. 
 * Challenges: This section shows the posts that are made for the weekly challenges and will contain all the weekly challenges posts. 
 * Leaderboard: This section allows the users to view their ranks in terms of the number of votes they received for the weekly challenges. At the end of the semester, the top 3 of the leaderboard would each get a prize from the club.  
 * About: This section contains information about the club and its members. 
 * Contact: This section allows the users to contact the club members through email and discord.
 * Sign In/Sign Up: As the section implies, it is the sign in/ sign up page.  
+
+<img src = "/images/Samples/LoginPage.jpeg">
+<img src = "/images/Samples/SignUpPage.jpeg">
 
 # Why should you use this app?
 UMassDesign allows club members to:

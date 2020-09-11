@@ -1,3 +1,4 @@
+import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:flutter/material.dart';
 import 'package:UMassDesign/utils/variables.dart';
 
@@ -9,10 +10,14 @@ class LeaderBoard extends StatefulWidget {
 class _LeaderBoardState extends State<LeaderBoard> {
   @override
   Widget build(BuildContext context) {
-    return Container(
-      child: Text(
-        'Leaderboard',
-        style: robotoStyle(30),
+    return Scaffold(
+      appBar: AppBar(
+        centerTitle: true,
+        title: Text(
+          'Leaderboard',
+          style: pacificoStyle(30),
+        ),
+        backgroundColor: Colors.purple[700],
       ),
     );
   }

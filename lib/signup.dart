@@ -14,13 +14,17 @@ class _SignUpState extends State<SignUp> {
   var passwordController = TextEditingController();
 
   signup() {
-    FirebaseAuth.instance.createUserWithEmailAndPassword(
-      email: emailController.text, password: passwordController.text).then((signedInUser) {
+    FirebaseAuth.instance
+        .createUserWithEmailAndPassword(
+            email: emailController.text, password: passwordController.text)
+        .then((signedInUser) {
       userCollection.doc(signedInUser.user.uid).set({
         'username': usernameController.text,
         'email': emailController.text,
         'password': passwordController.text,
         'uid': signedInUser.user.uid,
+        'displaypicture':
+            'https://upload.wikimedia.org/wikipedia/commons/7/7c/Profile_avatar_placeholder_large.png'
       });
     });
     Navigator.pop(context);

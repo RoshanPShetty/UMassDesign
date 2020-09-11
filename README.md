@@ -6,8 +6,9 @@ UMassDesign is a Flutter application that is built for the UMass Design Club. It
 The app has several interactive pages: 
 * Sign In / Sign Up: The application opens with a sign in page. If you aren't signed in, then you can go the sign up page where you can register and your data is stored in firebase.
 
-->![](https://media.giphy.com/media/fW5cbr8nL0zrFRF6wg/giphy.gif)<-
-
+<div style = "text-align: center">
+  <img src = "https://media.giphy.com/media/fW5cbr8nL0zrFRF6wg/giphy.gif">
+</div>
 
 * Home: Once, you're logged in, you're then taken to the general page where all the posts will be there.
 

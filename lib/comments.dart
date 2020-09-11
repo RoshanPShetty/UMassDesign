@@ -18,7 +18,7 @@ class _CommentsState extends State<Comments> {
         centerTitle: true,
         title: Text(
           'Comments',
-          style: robotoStyle(20),
+          style: pacificoStyle(30),
         ),
       ),
       body: StreamBuilder(

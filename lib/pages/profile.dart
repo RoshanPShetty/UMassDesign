@@ -9,10 +9,14 @@ class Profile extends StatefulWidget {
 class _ProfileState extends State<Profile> {
   @override
   Widget build(BuildContext context) {
-    return Container(
-      child: Text(
-        'Profile',
-        style: robotoStyle(30),
+    return Scaffold(
+      appBar: AppBar(
+        centerTitle: true,
+        title: Text(
+          'Profile',
+          style: pacificoStyle(30),
+        ),
+        backgroundColor: Colors.purple[700],
       ),
     );
   }

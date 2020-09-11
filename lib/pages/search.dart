@@ -9,10 +9,14 @@ class Search extends StatefulWidget {
 class _SearchState extends State<Search> {
   @override
   Widget build(BuildContext context) {
-    return Container(
-      child: Text(
-        'Home',
-        style: robotoStyle(30),
+    return Scaffold(
+      appBar: AppBar(
+        centerTitle: true,
+        title: Text(
+          'Search',
+          style: pacificoStyle(30),
+        ),
+        backgroundColor: Colors.purple[700],
       ),
     );
   }

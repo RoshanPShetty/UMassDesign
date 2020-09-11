@@ -9,10 +9,14 @@ class Challenges extends StatefulWidget {
 class _ChallengesState extends State<Challenges> {
   @override
   Widget build(BuildContext context) {
-    return Container(
-      child: Text(
-        'Challenges',
-        style: robotoStyle(30),
+    return Scaffold(
+      appBar: AppBar(
+        centerTitle: true,
+        title: Text(
+          'Challenges',
+          style: pacificoStyle(30),
+        ),
+        backgroundColor: Colors.purple[700],
       ),
     );
   }

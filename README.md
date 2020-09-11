@@ -12,16 +12,24 @@ The app has several interactive pages:
 
 * Home: Once, you're logged in, you're then taken to the general page where all the posts will be there.
 
-->![](https://media.giphy.com/media/JsnikrSM2cA4nGMcpR/giphy.gif)<-
+<p align = "center">
+  <img src = "https://media.giphy.com/media/JsnikrSM2cA4nGMcpR/giphy.gif">
+</p>
+
 
 * Add: This floating button allows users to add a post with just an image or an image with a caption. 
 
-->![](https://media.giphy.com/media/Ieuu4cwZQR1Td9QYvi/giphy.gif)<-
+<p align = "center">
+  <img src = "https://media.giphy.com/media/Ieuu4cwZQR1Td9QYvi/giphy.gif">
+</p>
 
 
 * Bottom Navigation Bars: You will have 5 Bars: Home, Search, Challenges, Leaderboard, and Profile.
 
-->![](https://media.giphy.com/media/cOVcSe0v7LdVw8ITgm/giphy.gif)<-
+<p align = "center">
+  <img src = "https://media.giphy.com/media/cOVcSe0v7LdVw8ITgm/giphy.gif">
+</p>
+
 
 * Search: This section allows users to search the members of the club who have registered on this app.  
 * Challenges: This section shows the posts that are made for the weekly challenges and will contain all the weekly challenges posts. 

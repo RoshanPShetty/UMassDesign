@@ -48,3 +48,7 @@ UMassDesign allows club members to:
 * View their ranks on the leaderboard
 * View information regarding the club  
 * Contact the members of the club via email or discord
+
+# Technologies used?
+* **Flutter**
+* **Firebase**

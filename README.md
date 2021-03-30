@@ -49,6 +49,6 @@ UMassDesign allows club members to:
 * View information regarding the club  
 * Contact the members of the club via email or discord
 
-# Technologies used?
+# Technologies used:
 * **Flutter**
 * **Firebase**
